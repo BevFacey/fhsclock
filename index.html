@@ -12,7 +12,7 @@
 <div id="periodCountdown" style="text-align: center; font-size: 500%;"></div>
 
 <script>
-  var periods = ["Warning", "Period 1","Break 1","Period 2","Lunch","Period 3","Break 2","Period 4"]
+  var periods = ["Warning", "Period 1","Break 1","Period 2","Lunch","Warning","Period 3","Break 2","Period 4"]
     // there is no period name for the end of the day
   
   var period;
@@ -52,9 +52,9 @@
     } else {
       // Opportunity Wednesday
       if (dateNow.getDay() == 3) {
-        var startTimes = ["8:23","8:28","9:39","9:46","10:57","11:48","12:59","13:06","14:15"];
+        var startTimes = ["8:23","8:28","9:39","9:46","10:57","11:43","11:48","12:59","13:06","14:15"];
       } else {
-        var startTimes = ["8:23","8:28","9:55","10:02","11:29","12:14","13:41","13:48","15:15"]
+        var startTimes = ["8:23","8:28","9:55","10:02","11:29","12:09","12:14","13:41","13:48","15:15"]
       }
       // test if current datetime is greater than period start time
       for (var i = 0; i < periods.length; i++) {
